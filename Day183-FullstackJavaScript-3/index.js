@@ -248,6 +248,7 @@
 // console.log(pug.tail); //? undefined
 
 
+// ! ################################################# ABOVE TOPIC ENDS HERE ####################################################################
 
 
 // ? __proto__ is a reference to the prototype object of the function
@@ -260,16 +261,99 @@ var a = {
     }    
 };
 
-var b = {
-    y:20,
-    __proto__:a //? __proto__ is a reference to the prototype object of the function  , here it is a object, so b object will inherit all the properties and methods of a object
-};
+// __proto__ is a reference to the prototype object of the function
 
-var c = {
-    y:30,
-    __proto__:a
-};
+// var b = {
+//     y:20,
+//     __proto__: a //? __proto__ is a reference to the prototype object of the function  , here it is a object, so b object will inherit all the properties and methods of a object
+// };
 
-//? __proto__ is a reference to the prototype object of the function
+// console.log(b.x); //? 10
 
-console.log(b.calculate(30)); //? 60
+// var c = {
+//     y:30,
+//     __proto__: a // prototype chaining , c object will inherit all the properties and methods of a object
+// };
+
+// console.log(c.x); //? 10
+
+// a.x=101;
+
+// console.log(b.x); //? 101
+
+// in javascript, objects inherit from objects, not from classes like in other object oriented programming languages
+
+// why do we need __proto__?    __proto__ is a reference to the prototype object of the function
+
+
+// !################################################# ABOVE TOPIC ENDS HERE ####################################################################
+
+
+// prototype
+// Prototype is a property of a function and proto is a property of an object
+// prototype is used by constructor functions and proto is used by all the objects in javascript
+
+// Prototype is an object available in function which is used for inheritance in javascript
+// also known as prototypical inheritance 
+
+// what is prototypical inheritance?
+// Prototypical inheritance is a type of inheritance in which an object inherits from its prototype object
+
+// what is prototype object?
+// prototype object is an object which is assigned to the prototype property of a function
+
+// what is prototype property?
+// prototype property is a property of a function which is used to assign a prototype object to the function
+
+// what is __proto__?
+// __proto__ is a reference to the prototype object of the function
+
+// what is prototype chaining?
+// prototype chaining is a process of inheriting properties and methods from one object to another object
+
+// what is the difference between __proto__ and prototype?
+
+// __proto__ is a reference to the prototype object of the function
+// prototype is a property of a function which is used to assign a prototype object to the function
+
+// what is object in javascript?
+// object is a collection of key value pairs
+
+// what is object oriented programming in javascript?
+// object oriented programming is a programming paradigm based on the concept of objects
+
+
+// a.b
+// prototype.slice
+// prototype.push
+
+// the above means that slice and push are properties of prototype object and prototype is an object . so slice and push are methods of prototype object
+
+// console.log(Array.prototype);   //? Array(0) [constructor: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, find: ƒ, …]
+
+// ! ################################################# ABOVE TOPIC ENDS HERE ####################################################################
+
+function Foo(y){
+    this.y=y;   
+}
+
+Foo.prototype.x=20;
+Foo.prototype.calculate=function(z){
+    return this.x + this.y + z;
+}
+
+
+var b = new Foo(10);    //? b object will inherit all the properties and methods of Foo object
+
+console.log(b.x); //? 20
+console.log(b.calculate(30));
+console.log(b);    
+console.log(b.__proto__);    //? Foo {x: 20, calculate: ƒ, constructor: ƒ}
+
+
+// proto 
+// proto is used to point one object to another object
+// b would be able to access all properties of a 
+
+// prototype 
+// prototype is an object which in available in function , which is used for inheritance in javascript
