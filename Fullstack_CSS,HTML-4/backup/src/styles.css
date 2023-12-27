@@ -1,0 +1,65 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  .test {
+    /* display: inline; */
+    height: 100px;
+    width: 20rem;
+    background: blue;
+  }
+  
+  .test1 {
+    display: inline-block;
+    /* display: none; */
+    background: yellow;
+    height: 100px;
+    width: 50%;
+  }
+  
+  /* inline-block  if :required will take height and width */
+  
+  /*
+   you have to create 3 boxes of equal width
+   covering the whole screen
+   and they should be next to each other
+  
+   diagram shown in lecture check at timestamp : 1:50:56 ==> assignment
+  
+   you can give width in percentage as well the percentage is the screen size 
+   of the window
+  
+   display: none means dont display that element itself
+  
+   what rem suggest is I am going to take the value of base font size of html 
+   by default font size is 16 px 
+   so 1 rem  = 16px 
+  
+   rem is getting derived from the value of the root of the element font size 
+  
+   rem usage
+  -------------
+  -  media queries 
+  like if we have mobile we can have 
+  html{
+   font-size : 10px
+  }
+  
+  if its a desktop then we can have 
+  html{
+    font-size: 20px
+  }
+  
+  at timestamp : 2:14:30 media queries has been discussed copy the code 
+  of media query to your system 
+  
+  
+  using media query we can change the div background color to white , black 
+  according to the screen size by dragging the size sideways we can get the 
+  different color for one div element 
+  */
+  
