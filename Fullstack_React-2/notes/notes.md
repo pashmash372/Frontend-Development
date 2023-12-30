@@ -168,3 +168,5 @@ create package.json file for react
 - function component
 
 - name of the component should start with capital letter pascal case eg : App, Abc, AbcDef
+
+
