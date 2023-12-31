@@ -121,7 +121,7 @@ and when states (allProducts,isLoading) either of these are changed.
 - useEffect would be called once on mounting
 - next everytime on state change of dependency array variables.
 
-# useEffect on going
+## useEffect on going
 
 - Mounting phase call function ProductList()
 - call useEffect callback  getProductsApi()
@@ -139,7 +139,7 @@ and when states (allProducts,isLoading) either of these are changed.
 
 ![Alt text](image-7.png)
 
-# virtual dom
+## virtual dom
 
 - virtual dom is a copy of the real dom in memory
 
@@ -306,3 +306,7 @@ use paint flashes to see the difference
 with vanilla js and react
 
 - with keys are more efficient than without keys
+
+## Sid sir dummy url for api created
+
+ [dummy url sir created for product api ](https://602fc537a1e9d20017af105e.mockapi.io/api/v1//products)
