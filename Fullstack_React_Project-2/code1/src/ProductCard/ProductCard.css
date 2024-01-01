@@ -1,4 +1,4 @@
-.ProductCard{
+.ProductCard {
     border: 1px solid red;
     border-radius: 5px;
     padding: 10px;
@@ -10,4 +10,8 @@
     text-align: center;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    position: relative; /* Add this line */
 }
+
+
+
