@@ -1,5 +1,7 @@
 import { useState } from "react";
-import ProductsList from "./ProductList";
+// import ProductsList from "./ProductList";
+
+import ProductsList from "./Components/ProductList/ProductsList";
 
 import "./styles.css";
 
