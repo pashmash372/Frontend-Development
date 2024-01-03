@@ -35,9 +35,9 @@ function ProductsList() {
   } else {
     return (
       <div className="productsList">
-        {allProducts.map((Product) => {
-          return <ProductCard product={Product} />;
-        })}
+        {allProducts.map(function (product) {
+            return <ProductCard product={product} key={product.id} />;
+          })}
       </div>
     );
   }

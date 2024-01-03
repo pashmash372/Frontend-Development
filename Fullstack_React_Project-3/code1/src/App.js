@@ -1,7 +1,7 @@
 import { useState } from "react";
+import Cart from "./Components/Cart/Cart";
 import ProductsList from "./Components/ProductList/ProductsList";
 import CartContext from "./Context/CartContext";
-
 import "./styles.css";
 
 function App() {
@@ -32,12 +32,15 @@ function App() {
     setCart(newCart);
   }
 
+  const cartLength = Object.keys(cart).length;
   return (
     <CartContext.Provider
       value={{ cart, increaseQuantity, decreaseQuantity }}
     >
       <div >
+        {cartLength >0 ? <Cart/> : null}        
         <ProductsList />
+
       </div>
     </CartContext.Provider>
   );

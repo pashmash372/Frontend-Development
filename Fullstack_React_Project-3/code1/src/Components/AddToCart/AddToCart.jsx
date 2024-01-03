@@ -6,8 +6,8 @@ import "./AddToCart.css";
 function AddToCart({ product }) {
 
   const { cart, increaseQuantity, decreaseQuantity } = useContext(CartContext);
-  console.log(cart);
-  console.log(Object.keys(cart));
+  // console.log(cart);
+  // console.log(Object.keys(cart));
   let quantity = cart[product.id] ? cart[product.id].quantity : 0;
   if (quantity > 0) {
     return (
