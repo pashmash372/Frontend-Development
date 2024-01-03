@@ -2,7 +2,7 @@ import AddToCart from "../AddToCart";
 import Rating from "../Rating";
 import "./ProductCard.css";
 
-function ProductCard({ product, cart, increaseQuantity, decreaseQuantity }) {
+function ProductCard({ product}) {
   return (
     <div className="ProductCard">
       <h3>{product.title}</h3>
@@ -10,10 +10,7 @@ function ProductCard({ product, cart, increaseQuantity, decreaseQuantity }) {
       <Rating rating={product.rating.value} maxRating={5} size={1} />
       <div>
         <AddToCart
-          product={product}
-          cart={cart}
-          increaseQuantity={increaseQuantity}
-          decreaseQuantity={decreaseQuantity}
+          product={product}          
         />
       </div>
     </div>
