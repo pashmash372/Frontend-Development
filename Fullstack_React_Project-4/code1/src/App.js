@@ -1,7 +1,9 @@
 import { useState } from "react";
-import Cart from "./Components/Cart/Cart";
-import ProductsList from "./Components/ProductList/ProductsList";
+import { Route, Switch } from "react-router-dom";
 import CartContext from "./Context/CartContext";
+import CartPage from "./Pages/CartPage";
+import NotFoundPage from "./Pages/NotFoundPage";
+import ProductPage from "./Pages/ProductPage";
 import "./styles.css";
 
 function App() {
@@ -37,11 +39,14 @@ function App() {
     <CartContext.Provider
       value={{ cart, increaseQuantity, decreaseQuantity }}
     >
-      <div >
-        {cartLength >0 ? <Cart/> : null}        
-        <ProductsList />
+      <Switch>
+        <Route exact={true} path="/" component={ProductPage}/>
+        <Route exact={true} path="/cart" component={CartPage}/>
+        <Route component={NotFoundPage} />
+        {/* <Route path="*" component={() => <h1>404 Not Found</h1>}/> */}
+        
+      </Switch>
 
-      </div>
     </CartContext.Provider>
   );
 }
