@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Categories from "../Categories/Categories";
 import ProductCard from "../ProductCard";
 import "./ProductsList.css";
 
@@ -37,6 +38,7 @@ function ProductsList() {
     return (
       <>
       <Link to="/cart" className="button-32">Cart</Link>
+      <Categories />
       <div className="productsList">
         {allProducts.map(function (product) {
             return <ProductCard product={product} key={product.id} />;

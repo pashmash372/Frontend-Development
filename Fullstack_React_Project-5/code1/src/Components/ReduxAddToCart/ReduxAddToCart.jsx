@@ -4,7 +4,7 @@ import "./ReduxAddToCart.css";
 function AddToCart({ product }) {
   const dispatch = useDispatch();
   const quantity = useSelector((state) => {
-    return state.items[product.id]?.quantity || 0;
+    return state.cart.items[product.id]?.quantity || 0;
   });
 
   // console.log("Add to cart " + product.id);
