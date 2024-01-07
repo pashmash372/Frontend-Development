@@ -1,0 +1,26 @@
+ol {
+    list-style-type: none;
+    padding: 0px;
+    margin: 10px;
+}
+
+
+/* css for whole cart  */
+
+.Cart {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    position: relative; /* Add this line */
+}
+ 
+
+

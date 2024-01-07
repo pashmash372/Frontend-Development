@@ -1,0 +1,71 @@
+
+/* css for button  */
+.addToCart {
+    background-color: #f0c040;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute; /* Add this line */
+    bottom: 0; /* Add this line */
+    left: 0;
+    right: 0;
+    width: 100%; 
+  }
+  
+  
+  
+  /* css for plus button */
+  
+  .plus {
+    background-color: #f0c040;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+  }
+  
+  /* css for minus button */
+  
+  .minus {
+    background-color: #f0c040;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* css for quantity field */
+  
+  .quantity {
+    background-color: #f0c040;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  
